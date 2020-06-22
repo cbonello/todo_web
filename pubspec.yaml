@@ -8,8 +8,11 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  equatable: ^1.2.0
   flutter:
     sdk: flutter
+  flutter_bloc: ^4.0.0
+  uuid: ^2.1.0
 
   cupertino_icons: ^0.1.0
 
