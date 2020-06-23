@@ -29,6 +29,7 @@ class TodosRepository implements ITodosRepository {
 
   @override
   Future<void> saveTodos(List<TodoEntity> todos) async {
+    await store.delete(db);
     await db.transaction((Transaction txn) async {
       for (final TodoEntity todo in todos) {
         final Map<String, dynamic> json = todo.toJson();
