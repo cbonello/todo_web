@@ -1,8 +1,7 @@
 name: test_indexdb
 version: 1.0.0+1
-description: A Flutter project to test the IndexedDb ObjectStore.
+description: A small project to test the sembast package with Flutter web.
 publish_to: 'none' 
-
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
