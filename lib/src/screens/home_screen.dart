@@ -26,12 +26,10 @@ class HomeScreen extends StatelessWidget {
               const ExtraActions(),
             ],
           ),
-          body: activeTab == AppTab.todos ? FilteredTodos() : Stats(),
+          body: activeTab == AppTab.todos ? const FilteredTodos() : const Stats(),
           floatingActionButton: FloatingActionButton(
             key: AppKeys.addTodoFab,
-            onPressed: () {
-              Navigator.pushNamed(context, AddEditScreen.route);
-            },
+            onPressed: () => Navigator.pushNamed(context, AddEditScreen.route),
             tooltip: 'Add Todo',
             child: const Icon(Icons.add),
           ),

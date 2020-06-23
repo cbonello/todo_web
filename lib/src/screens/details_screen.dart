@@ -44,10 +44,10 @@ class DetailsScreen extends StatelessWidget {
               : Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: ListView(
-                    children: [
+                    children: <Widget>[
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: <Widget>[
                           Padding(
                             padding: const EdgeInsets.only(right: 8.0),
                             child: Checkbox(

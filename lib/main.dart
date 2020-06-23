@@ -9,10 +9,8 @@ Future<void> main() async {
 
   EquatableConfig.stringify = true;
 
-  runTodoApp(TodosRepository(
-      // localStorage: KeyValueStorage(
-      //   'bloc_library',
-      //   WebKeyValueStore(window.localStorage),
-      // ),
-      ));
+  final TodosRepository todosRepository = TodosRepository();
+  await todosRepository.init();
+
+  runTodoApp(todosRepository);
 }

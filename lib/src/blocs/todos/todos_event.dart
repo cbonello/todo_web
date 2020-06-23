@@ -4,7 +4,7 @@ abstract class TodosEvent extends Equatable {
   const TodosEvent();
 
   @override
-  List<Object> get props => [];
+  List<Object> get props => <Object>[];
 }
 
 class LoadTodos extends TodosEvent {}
@@ -15,10 +15,7 @@ class AddTodo extends TodosEvent {
   final Todo todo;
 
   @override
-  List<Object> get props => [todo];
-
-  @override
-  String toString() => 'AddTodo { todo: $todo }';
+  List<Object> get props => <Object>[todo];
 }
 
 class UpdateTodo extends TodosEvent {
@@ -27,10 +24,7 @@ class UpdateTodo extends TodosEvent {
   final Todo updatedTodo;
 
   @override
-  List<Object> get props => [updatedTodo];
-
-  @override
-  String toString() => 'UpdateTodo { updatedTodo: $updatedTodo }';
+  List<Object> get props => <Object>[updatedTodo];
 }
 
 class DeleteTodo extends TodosEvent {
@@ -39,10 +33,7 @@ class DeleteTodo extends TodosEvent {
   final Todo todo;
 
   @override
-  List<Object> get props => [todo];
-
-  @override
-  String toString() => 'DeleteTodo { todo: $todo }';
+  List<Object> get props => <Object>[todo];
 }
 
 class ClearCompleted extends TodosEvent {}
